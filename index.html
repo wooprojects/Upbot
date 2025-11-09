@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ربات آپلودر تلگرام</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ربات آپلودر تلگرام</h1>
+            <p>توکن ربات خود را وارد کنید و فایل‌ها را آپلود نمایید</p>
+        </header>
+
+        <main>
+            <div class="card">
+                <h2>تنظیمات ربات</h2>
+                <div class="input-group">
+                    <label for="botToken">توکن ربات تلگرام:</label>
+                    <input type="text" id="botToken" placeholder="توکن ربات خود را اینجا وارد کنید">
+                    <button id="saveTokenBtn" class="btn-primary">ذخیره توکن</button>
+                </div>
+                <div class="token-status" id="tokenStatus">
+                    <span>توکن ذخیره نشده است</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>آپلود فایل</h2>
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">📁</div>
+                    <p>فایل خود را اینجا رها کنید یا کلیک کنید</p>
+                    <input type="file" id="fileInput" multiple>
+                </div>
+                <div class="upload-info">
+                    <p>حداکثر حجم فایل: 20 مگابایت</p>
+                    <p>فرمت‌های پشتیبانی شده: تمامی فرمت‌ها</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>فایل‌های آپلود شده</h2>
+                <div class="files-list" id="filesList">
+                    <p class="empty-message">هنوز فایلی آپلود نکرده‌اید</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>این برنامه بدون نیاز به سرور و بر روی GitHub Pages اجرا می‌شود</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
